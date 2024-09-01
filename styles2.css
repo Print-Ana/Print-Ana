@@ -1,0 +1,13 @@
+/* Estilo global do corpo */
+body {
+    background-color:   #FF914D;
+}
+
+
+/* Estilo do bloco de login */
+.login-block {
+    background-color: #FF914D;
+    color: #FFFFFF;
+    /* A posição será ajustada pelo JavaScript */
+}
+

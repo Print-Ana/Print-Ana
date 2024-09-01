@@ -1,0 +1,153 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFF8EF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Remover barra de rolagem */
+}
+
+/* Barra de Tarefas Vertical */
+.barra-tarefas {
+    background-color: #FF914D;
+    height: 100vh;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ícone de Usuário */
+.icone-usuario {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Container das Figuras e Quadrados */
+.container {
+    margin-left: 70px;
+    padding: 20px;
+    position: relative;
+}
+
+/* Figuras */
+.figura {
+    position: absolute;
+    object-fit: cover;
+}
+
+/* Estilo Geral para os Quadrados */
+.quadrados-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+/* Estilo Geral para os Quadrados */
+.quadrado {
+        width: 300px; /* Largura aumentada para retângulo */
+        height: 200px; /* Altura ajustada */
+        color: #FFFFFF;
+        font-size: 22px;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 20px; /* Bordas arredondadas */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+/* Estilo para o Texto dos Quadrados */
+.quadrado svg {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estilos Específicos para Cada Quadrado */
+.cursos-livres {
+    background-color: #7ED957;
+}
+
+.cursos-livres:hover {
+    background-color: #6CC44A;
+    transform: scale(1.05);
+}
+
+.login {
+    background-color: #E60052;
+}
+
+
+.login:hover {
+    background-color: #006D70;
+    transform: scale(1.05);
+}
+
+
+
+/* Estilos adaptativos para dispositivos móveis */
+@media (max-width: 768px) {
+    .barra-tarefas {
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .icone-usuario {
+        width: 40px;
+        height: 40px;
+    }
+
+    .container {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .figura {
+        width: 100%;
+        height: auto;
+    }
+
+    .quadrado {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+.icone-topo {
+    margin-top: 20px;
+}
+
+.icone-centro {
+    margin-top: 50%; /* Ajuste conforme necessário */
+    transform: translateY(-600%);
+}
+/* Estilo para os Ícones de Redes Sociais */
+.social-icons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000; /* Mantém os ícones sobre outros elementos */
+}
+
+.social-icon {
+    color: #FF914D; /* Cor dos ícones */
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #E60052; /* Cor de hover dos ícones */
+    transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
