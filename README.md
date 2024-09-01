@@ -1,4 +1,5 @@
 --SITE EM CONSTRUÇÃO--
+Versão para computadores
 
 Olá! :)
 Esse é o meu primeiro projeto de um site educacional voltado para estudantes interessados por cursos gratuitos oferecidos por empresas parceiras.
